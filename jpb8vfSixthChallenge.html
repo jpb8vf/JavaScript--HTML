@@ -1,0 +1,197 @@
+<!--
+    name: Joseph Bertolino
+    Pawprint: jpb8vf     
+    date: 9/26/17
+-->
+
+<!--<!DOCTYPE html> -->
+
+
+<html>
+<head>
+   
+<title id="title"> Challenge Six</title>
+<style id="s2">
+    
+    
+    
+    </style> 
+    
+<style id= "s3"> 
+    
+    
+    
+    
+    </style>    
+<style>
+    h1,h2{
+            text-align: center;
+            border: 5px dashed lightcoral;
+
+    }
+    
+    #hc{
+        width: 40%;
+        display: inline-block;
+        
+    }
+   
+#cssbox,#htmlbox{
+            float: left;        
+            clear: both;
+            width: 122%;
+            height: 300px;
+            border:1px solid lightgray;
+            border-radius: 10px;
+            align-content: center;
+        display: block;
+        box-shadow: 10px 10px 50px lightgray;
+    }
+    
+#cssbox, #htmlbox: focus {
+        box-shadow: 10px 10px 50px #7bc1f7;
+    }
+    
+#rb{
+            float: right;
+            width: 50%;
+            height: 600px;
+            border:1px solid lightgray;
+            border-radius: 10px;
+            box-shadow: 10px 10px 50px lightgray;
+            align-content: center;
+            display: inline-block;
+    }
+    
+
+button{
+            background-color: lightcoral;
+            border: dashed 2px white;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            
+            
+    }
+    
+#wrapper{
+        width: 100%;
+        margin: auto;
+    }
+
+
+    
+</style>
+</head>
+    
+
+    
+<body>
+    <h1> Sixth Challenge</h1>
+
+    
+<div id="wrapper">
+    <div id= "hc">
+            <textarea rows="10" cols="100" id="cssbox" name="cssbox" placeholder="CSS" wrap=on ondblclick="myCSS();">
+            CSS...
+            </textarea>
+
+            <textarea rows="10" cols="100" id="htmlbox" name="htmlbox" wrap=on placeholder="HTML" ondblclick="myHTML();">
+            HTML...
+            </textarea>    
+    </div>
+    
+     <div id="rb">
+         
+         
+            </div>
+</div>   
+
+
+<button type="button" id="l" name="l" onclick="launch()">Launch</button>
+
+<button type="button" id="j" name="t" onclick="togglecss()">Toggle</button>
+
+<button type="button" id="c" name="c" onclick="eraseText()" ondblclick= "titleclick()">Clear</button> 
+    
+    
+
+    
+    
+<script> 
+    var Z = true; 
+
+    
+    
+function myCSS() {
+                        var x = document.getElementById("cssbox"); 
+                        x.value = 'h4{color:green;}\np{font-family:cursive,arial;font-size:22pt;}';
+}
+function myHTML() {
+                        var y = document.getElementById("htmlbox"); 
+                        y.value= '<h4>Hellow World!</h4>\n<p>is it applied ?</p>';
+}
+    
+
+    
+function eraseText() {
+
+                        document.getElementById("cssbox").value = "";
+                        document.getElementById("htmlbox").value = "";
+                        document.getElementById("rb").innerHTML = "";
+}
+    
+function titleclick() {
+    
+                         var t = prompt("Please enter a new title", " new title");
+                    if (t != null) {
+                            document.getElementById("title").innerHTML = t;  
+                                }
+}
+    
+    
+
+function launch() {
+
+                        document.getElementById("rb").innerHTML =
+                        document.getElementById("htmlbox").value;
+                       document.getElementById("s2").innerHTML = 
+                           document.getElementById("cssbox").value;
+    
+
+}
+
+    
+ function togglecss(){
+        if (Z == false) 
+            {
+                document.getElementById("s2").innerHTML = document.getElementById("cssbox").value;
+                document.getElementById("s3").innerHTML = "";
+                
+                Z = true;
+                
+            }
+     else{
+                document.getElementById("s2").innerHTML = null;
+                document.getElementById("s3").innerHTML = '#j { background-color: red;}'
+                Z = false;
+            }
+ }
+
+    
+
+    
+    
+    
+    
+</script>    
+
+    
+    
+<h2> Created By: Joseph Bertolino</h2>   
+    
+</body>
+</html>
