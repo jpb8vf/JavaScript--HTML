@@ -1,1 +1,2 @@
 # JavaScript--HTML
+##provide an example of something you have created in HTML and JavaScript that illustrates you already have the foundation skills in HTML and JavaScript.  It doesn't have to be a super-amazing-complicated-difficult-professional example.  I just want to see that when we do some JavaScript programming in a future module that you have the foundation to focus on the programming and not on basic language features and how to assemble the pieces and make them work.
